@@ -7,7 +7,7 @@ import univ_lorraine.iut.java.privatechat.App;
 public class LoginController {
 
     @FXML
-    private void switchToSecondary() throws IOException {
+    private void login() throws IOException {
         App.setRoot("chat");
     }
 }
