@@ -5,6 +5,8 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
 <BorderPane prefHeight="476.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="univ_lorraine.iut.java.privatechat.controller.ChatController">
          <top>
               <Label text="Messagerie" BorderPane.alignment="CENTER">
@@ -13,6 +15,7 @@
          </font></Label>
          </top>
    <center>
+
               <Button fx:id="btnBackLogin" onAction="#logout" text="logout" BorderPane.alignment="CENTER" />
    </center>
       </BorderPane>
