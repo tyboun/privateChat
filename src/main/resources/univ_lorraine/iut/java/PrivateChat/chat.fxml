@@ -16,6 +16,7 @@
          </top>
    <center>
 
+
               <Button fx:id="btnBackLogin" onAction="#logout" text="logout" BorderPane.alignment="CENTER" />
    </center>
       </BorderPane>
