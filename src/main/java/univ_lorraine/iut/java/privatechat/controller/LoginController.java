@@ -7,7 +7,9 @@ import univ_lorraine.iut.java.privatechat.App;
 public class LoginController {
 
     @FXML
-    private void login() throws IOException {
+    private void login() throws IOException, ClassNotFoundException {
         App.setRoot("chat");
+        String args[] = new String[0];
+        univ_lorraine.iut.java.privatechat.clientserver.Serveur.main(args);
     }
 }

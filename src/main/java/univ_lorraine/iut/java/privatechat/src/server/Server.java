@@ -1,4 +1,4 @@
-package server;
+package univ_lorraine.iut.java.privatechat.src.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -48,7 +48,7 @@ public final class Server {
      */
     private static Thread handleConnection(Socket socket) {
         System.out.println("Connection request from: " + socket.getRemoteSocketAddress().toString());
-        Thread th = new ClientThread(socket, id);
+        Thread th = new server.ClientThread(socket, id);
         try {
             th.start();
         } catch (Exception e) {

@@ -9,5 +9,6 @@ public class ChatController {
     @FXML
     private void logout() throws IOException {
         App.setRoot("login");
+
     }
 }
