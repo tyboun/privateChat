@@ -11,6 +11,13 @@ public class User {
     private Socket socket;
     private Message messages[];
 
+    public User(InetAddress ipAdress, String Username, Socket socket, Message[] messages) {
+        this.ipAdress = ipAdress;
+        this.Username = Username;
+        this.socket = socket;
+        this.messages = messages;
+    }
+
     public void setMessages(Message[] messages) {
         this.messages = messages;
     }
