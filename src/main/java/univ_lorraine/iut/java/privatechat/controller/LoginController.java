@@ -25,13 +25,16 @@ public class LoginController {
     private void login() throws IOException, ClassNotFoundException {
         File passwordFile = new File("src/main/java/univ_lorraine/iut/java/privatechat/data/password.pwd");
         Path path = passwordFile.toPath();
-        List<String> idMdp = Files.readAllLines(path);
+        //check if the file exists if not create it
         if (!passwordFile.exists()) {
             passwordFile.createNewFile();
             Files.write(path, password.getText().concat("\n").getBytes());
             Files.write(path, id.getText().concat("\n").getBytes(), StandardOpenOption.APPEND);
             App.setRoot("chat");
-        } else if (idMdp.get(0).equals(id.getText()) && idMdp.get(1).equals(password.getText())) {
+        }
+        //read the password file to see if the credentials are good
+        List<String> idMdp = Files.readAllLines(path);
+        if (idMdp.get(0).equals(id.getText()) && idMdp.get(1).equals(password.getText())) {
             App.setRoot("chat");
         } else {
             password.setText("");
