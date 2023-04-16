@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import univ_lorraine.iut.java.privatechat.controller.ChatController;
 
 import java.io.IOException;
 
@@ -25,6 +26,9 @@ public class App extends Application {
 
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
+    }
+    public static void reloadContactList() throws IOException {
+
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

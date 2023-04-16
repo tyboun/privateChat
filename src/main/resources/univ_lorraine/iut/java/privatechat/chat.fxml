@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="476.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="univ_lorraine.iut.java.privatechat.controller.ChatController">
+<BorderPane prefHeight="476.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="univ_lorraine.iut.java.privatechat.controller.ChatController">
          <top>
               <Label text="Messagerie" BorderPane.alignment="CENTER">
          <font>
@@ -54,7 +54,7 @@
    <right>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <ListView fx:id="contact" prefHeight="440.0" prefWidth="128.0">
+            <ListView fx:id="contacts" prefHeight="440.0" prefWidth="128.0">
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                </padding>
@@ -62,6 +62,11 @@
                   <Insets bottom="10.0" right="10.0" />
                </VBox.margin>
             </ListView>
+            <Button fx:id="reloadContactList" mnemonicParsing="false" text="reload">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </VBox.margin>
+            </Button>
          </children>
       </VBox>
    </right>
